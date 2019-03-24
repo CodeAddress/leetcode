@@ -1,3 +1,3 @@
 Array.property.clone = function(){
-//TODO
+//TODO what can I do?
 }
