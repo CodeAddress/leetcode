@@ -1,4 +1,4 @@
 #ignore some files
-/LeetCode/.idea/*
-/LeetCode/.project
-/LeetCode/.classpath
+/.idea/*
+/.project
+/.classpath
