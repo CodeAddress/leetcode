@@ -3,7 +3,7 @@ package com.leetcode.study;
 public class RegularExpressionMatching {
 
     public static void main(String[] args) {
-        String matchStr = "aa", pattern = "a";
+        String matchStr = "aaabcc", pattern = "a*b*c.d";
         System.out.println(isMatch(matchStr, pattern));
     }
 
@@ -11,7 +11,7 @@ public class RegularExpressionMatching {
         int pStartPos = 0, mStartPos = 0;
         String subStr = "";
         while (pStartPos < pattern.length() && mStartPos >= 0 && mStartPos < matchStr.length()) {
-            if (++pStartPos <= pattern.length() && pattern.charAt(pStartPos) == '*') {
+            if (++pStartPos < pattern.length() && pattern.charAt(pStartPos) == '*') {
                 subStr = pattern.substring(pStartPos - 1, pStartPos + 1);
                 ++pStartPos;
             } else {
