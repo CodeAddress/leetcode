@@ -1,10 +1,7 @@
 package com.java8.newProperty.stream;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 
 public class HumanStream {
